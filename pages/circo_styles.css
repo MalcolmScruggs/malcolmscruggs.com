@@ -1,0 +1,127 @@
+/*Circo Color Globals*/
+.dark-text {
+  color: #323232;
+}
+
+.background-dark {
+  background-color: #323232 !important;
+}
+
+.background-dark-md {
+  background-color: #353535 !important;
+}
+
+.background-dark-lg {
+  background-color: #3f403f !important;
+}
+
+.background-dark-lgst {
+  background-color: #5d5e5e !important;
+}
+
+.background-purple {
+  background-color: #6d3390 !important;
+}
+
+.background-pink {
+  background-color: #a51e57 !important;
+}
+
+.background-blue {
+  background-color: #374fa1 !important;
+}
+
+.background-green {
+  background-color: #109a59 !important;
+}
+
+.background-salmon {
+  background-color: #e24d55 !important;
+}
+
+.background-red {
+  background-color: #b22b2b !important;
+}
+
+.background-orange {
+  background-color: #f68c1f !important;
+}
+
+.background-yellow {
+  background-color: #edae20 !important;
+}
+
+/*General Row Config*/
+.icons-head-left {
+  /*padding-top: 10rem;*/
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.icon-text p{
+  padding: 0;
+  margin: 0;
+  line-height: 110%;
+}
+
+/*
+First Row
+*/
+#row1 {
+  background: url("../images/projects/circo-proj-banner.png") no-repeat center;
+  background-size: cover;
+  height: 30rem;
+}
+
+.heading {
+  padding: 6rem;
+}
+
+/*
+Second row
+*/
+
+#first-descrip {
+  text-align: center;
+  /*padding-top: 4rem;*/
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 1.3rem;
+  line-height: 110%;
+  padding-bottom: 0;
+}
+
+
+/* Sixth row*/
+#final-row {
+  height: 15rem;
+}
+
+.final-row-col {
+  padding-top: 2rem;
+}
+
+.icon-img {
+  object-fit: cover;
+  width: 7rem;
+  height: 7rem;
+}
+
+#back-to-top {
+  padding-top: 9rem;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .icons-head-left {
+    padding: 9rem 9rem 0.2rem 9rem;
+  }
+
+  .icon-text p {
+    padding-bottom: 8rem;
+  }
+
+  #first-descrip {
+    padding: 7rem 3rem 7rem 3rem;
+  }
+}

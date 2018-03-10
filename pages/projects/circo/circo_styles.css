@@ -68,7 +68,7 @@
 First Row
 */
 #row1 {
-  background: url("../images/projects/circo-proj-banner.png") no-repeat center;
+  background: url("../../../res/projects/banners/circo-proj-banner.png") no-repeat center;
   background-size: cover;
   height: 30rem;
 }

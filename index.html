@@ -15,15 +15,20 @@
   <title>Malcolm Scruggs</title>
 
   <!-- Custom styles -->
-  <link href="cover.css" rel="stylesheet">
-  <script type="text/javascript" src="background.js"></script>
+  <link href="pages/homepage/homepage_styles.css" rel="stylesheet">
+  <link href="pages/homepage/homepage_background_colors.css" rel="stylesheet">
+  <script type="text/javascript" src="pages/homepage/background.js"></script>
   <!-- TODO: Figure out how to pre-load image or someway to make transitions between images smoother -->
 </head>
 
 <body>
 
-  <div class="site-wrapper" id="background">
 
+<div class="background grayscale" id="background_foreground"></div>
+<div class="background grayscale" id="background_background"></div>
+
+<div class="site-wrapper">
+  <div class="site-wrapper">
     <div class="site-wrapper-inner">
 
       <div class="cover-container">
@@ -32,7 +37,7 @@
           <div class="inner">
             <nav class="nav nav-masthead">
               <a class="nav-link active" href="#">Home</a>
-              <a class="nav-link" href="#" onmouseover="changeBkgRed()" onmouseout="reset()">About me</a>
+              <a class="nav-link" href="#" onmouseover="applyClass('sepia')" onmouseout="reset()">About me</a>
               <a class="nav-link" href="pages/projects/projects.html" onmouseover="changeBkgTeal()" onmouseout="reset()">Projects</a>
               <a class="nav-link" href="#" onmouseover="changeBkgPurp()" onmouseout="reset()">Resume</a>
               <a class="nav-link" href="#" onmouseover="changeBkgGreen()" onmouseout="reset()">Contact</a>
@@ -68,41 +73,42 @@
 
     </div>
 
+
     <!-- Script to pre-load all images for hovering over nav-items -->
-    <div class="hidden">
-      <script type="text/javascript">
-      function preloader() {
-        if (document.images) {
-          var img1 = new Image();
-          var img2 = new Image();
-          var img3 = new Image();
-          var img4 = new Image();
-          var img5 = new Image();
+    <!--<div class="hidden">-->
+      <!--<script type="text/javascript">-->
+      <!--function preloader() {-->
+        <!--if (document.images) {-->
+          <!--var img1 = new Image();-->
+          <!--var img2 = new Image();-->
+          <!--var img3 = new Image();-->
+          <!--var img4 = new Image();-->
+          <!--var img5 = new Image();-->
 
-          img1.src = "images/mountain_purple.jpg";
-          img2.src = "images/mountain_red.jpg";
-          img3.src = "images/mountain_teal.jpg";
-          img4.src = "images/mountain_green.jpg";
-          img5.src = "images/mountain.jpg";
-        }
-      }
-      function addLoadEvent(func) {
-        var oldonload = window.onload;
-        if (typeof window.onload != 'function') {
-          window.onload = func;
-        } else {
-          window.onload = function() {
-            if (oldonload) {
-              oldonload();
-            }
-            func();
-          }
-        }
-      }
-      addLoadEvent(preloader);
-      </script>
-    </div>
-
+          <!--img1.src = "images/mountain_purple.jpg";-->
+          <!--img2.src = "images/mountain_red.jpg";-->
+          <!--img3.src = "images/mountain_teal.jpg";-->
+          <!--img4.src = "images/mountain_green.jpg";-->
+          <!--img5.src = "images/mountain.jpg";-->
+        <!--}-->
+      <!--}-->
+      <!--function addLoadEvent(func) {-->
+        <!--var oldonload = window.onload;-->
+        <!--if (typeof window.onload != 'function') {-->
+          <!--window.onload = func;-->
+        <!--} else {-->
+          <!--window.onload = function() {-->
+            <!--if (oldonload) {-->
+              <!--oldonload();-->
+            <!--}-->
+            <!--func();-->
+          <!--}-->
+        <!--}-->
+      <!--}-->
+      <!--addLoadEvent(preloader);-->
+      <!--</script>-->
+    <!--</div>-->
+  </div>
   </div>
 
   <!-- Bootstrap core JavaScript

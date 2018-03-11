@@ -114,17 +114,8 @@ Second row
   transition: all 0.5s;
 }
 
-/* TODO convert this to use javascript so image grows and text is underlined on hover either */
-/*.icon-img:hover {*/
-  /*transform: scale(1.2);*/
-/*}*/
-
 .zoom {
   transform: scale(1.2);
-}
-
-.underline {
-  text-decoration: underline;
 }
 
 #back-to-top {

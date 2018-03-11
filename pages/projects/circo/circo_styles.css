@@ -105,13 +105,20 @@ Second row
   object-fit: cover;
   width: 7rem;
   height: 7rem;
+  margin-bottom: 0.5rem;
+}
+
+/* TODO convert this to use javascript so image grows and text is underlined on hover either */
+.icon-img:hover {
+  transform: scale(1.2);
 }
 
 #back-to-top {
-  padding-top: 9rem;
+  padding-top: 9.5rem; /* computed to be in line with other bottom row stuff */
   text-align: center;
 }
 
+/* TODO update media query to not add excessive padding below certain sizes */
 @media (max-width: 768px) {
   .icons-head-left {
     padding: 9rem 9rem 0.2rem 9rem;

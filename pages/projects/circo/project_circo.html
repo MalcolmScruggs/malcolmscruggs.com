@@ -5,9 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+          integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+          crossorigin="anonymous"></script>
 
   <!-- included for trying to get the background hover to work  -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -15,146 +19,165 @@
   <title>Malcolm Scruggs - Circo</title>
 
   <!-- Custom styles -->
+  <script type="text/javascript" src="circo.js"></script>
   <link href="../generic_project.css" rel="stylesheet">
   <link href="circo_styles.css" rel="stylesheet">
 </head>
 
 
 <body>
-  <div class="site-wrapper">
+<div class="site-wrapper">
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="navbar">
-      <a class="navbar-brand" href="../../../index.html" id="logo">Malcolm Scruggs</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" id="navbar">
+    <a class="navbar-brand" href="../../../index.html" id="logo">Malcolm Scruggs</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">   <!-- TODO fix baseline typography in navbar -->
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <!-- TODO fix baseline typography in navbar -->
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../projects.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main role="main" class="project_main">
+    <div class="container-fluid">
+      <div class="row" id="row1">
+        <div class="col-xl heading">
+          <h1 class="box-heading">Circo Icon Pack</h1>
+          <h6>Simple and colorful icons for Android</h6>
+        </div>
       </div>
-    </nav>
 
-    <main role="main" class="project_main">
-      <div class="container-fluid">
-        <div class="row" id="row1">
-          <div class="col-xl heading">
-            <h1 class="box-heading">Circo Icon Pack</h1>
-            <h6>Simple and colorful icons for Android</h6>
-          </div>
+      <div class="row no-gutters background-blue" id="launcher-row">
+        <div class="col-12 col-md-5 order-md-2 icon-text">
+          <!-- TODO fix text for ordering / layout -->
+          <h6 class="icons-head-left">Includes 300+ vector designed icons for use with custom
+            launchers for Android.</h6>
+          <p>
+            <small><em>Action, Adw, Apex, Atom,
+              <br>Aviate, Holo, Nova, Smart</em></small>
+          </p>
         </div>
 
-        <div class="row no-gutters background-blue" id="launcher-row">
-          <div class="col-12 col-md-5 order-md-2 icon-text" >
-            <!-- TODO fix text for ordering / layout -->
-            <h6 class="icons-head-left">Includes 300+ vector designed icons for use with custom launchers for Android.</h6>
-            <p><small><em>Action, Adw, Apex, Atom,
-              <br>Aviate, Holo, Nova, Smart</em></small></p>
-            </div>
-
-            <div class="col-12 col-md-7 order-md-1" id="icons-img-div">
-              <img class="box-img" src="../../../res/projects/circo/circo_promo_graphic_launcher.png" alt="GitHub">
-            </div>
-          </div>
-
-
-          <div class="row no-gutters background-red" id="color-row">
-            <div class="col-12 col-md-4 order-md-1 icon-text">
-              <h6 class="icons-head-left">Color choice for genric apps</h6>
-              <p><small><em>Choices: purple, blue, light blue, green, salmon, pink, red, orange, yellow</em></small></p>
-            </div>
-            <div class="col-12 col-md-8 order-md-2" id="general-1-icons-img">
-              <img class="box-img" src="../../../res/projects/circo/circo_promo_graphic_gallerycolors.png" alt="GitHub">
-            </div>
-          </div>
-
-          <div class="row no-gutters background-purple" id="social-row">
-            <div class="col-12 col-md-4 order-md-2 icon-text">
-              <h6 class="icons-head-left">Icons for Social Apps</h6>
-              <p><small><em>Twitch Messenger, Textra, Reddit, Tinder
-                <br>Facebook, Snapchat, Bitmoji, Messenger</em></small></p>
-              </div>
-              <div class="col-12 col-md-8 order-md-1" id="social-icons-img">
-                <img class="box-img" src="../../../res/projects/circo/circo_promo_graphic_social.png" alt="GitHub">
-              </div>
-            </div>
-
-          <div class="row no-gutters background-green" id="google-row">
-            <div class="col-12 col-md-4 icon-text">
-              <h6 class="icons-head-left">Icons for Google Apps</h6>
-              <p><small><em>Wallpapers, Movies, Assistant, Classroom
-                <br>Youtube Music, Sheets, Translate, Fit</em></small></p>
-              </div>
-              <div class="col-12 col-md-8" id="google-icons-img">
-                <img class="box-img" src="../../../res/projects/circo/circo_promo_graphic_google.png" alt="GitHub">
-              </div>
-            </div>
-
-              <div class="row no-gutters background-red" id="audio-row">
-                <div class="col-12 col-md-4 icon-text order-md-2">
-                  <h6 class="icons-head-left">Icons for Audio Apps</h6>
-                  <p><small><em>Apple Music, TuneIn, SoundHound, Pocket Casts
-                    <br>Spotify, SoundCloud, Audiomack, Shazam</em></small></p>
-                  </div>
-                  <div class="col-12 col-md-8 order-md-1" id="general-2-icons-img">
-                    <img class="box-img" src="../../../res/projects/circo/circo_promo_graphic_music.png" alt="GitHub">
-                  </div>
-                </div>
-                <!-- TODO add in use screenshots -->
-
-                <div class="row no-gutters background-dark-md" id="final-row">
-                  <div class="col-12 col-md-4 final-row-col background" >
-                    <a href="https://play.google.com/store/apps/details?id=com.mookie.circo">
-                      <img src="../../../res/projects/circo/ic_google_play.png" alt="Google Play" class="icon-img">
-                    </a>
-                    <h6 class="under-icon-link">
-                      <a href="https://play.google.com/store/apps/details?id=com.mookie.circo" id="play-store">
-                        Available on the Play Store
-                      </a>
-                    </h6>
-                  </div>
-
-                  <div class="col-12 col-md-4 final-row-col background-dark-md">
-                    <a href="https://github.com/MalcolmScruggs/CircoIconPack"> <!-- TODO expand image on hover (see css zoom) -->
-                      <img src="../../../res/projects/circo/ic_github.png" alt="GitHub" class="icon-img">
-                    </a>
-                    <h6 class="under-icon-link">
-                      <a href="https://github.com/MalcolmScruggs/CircoIconPack">
-                        Circo on GitHub
-                      </a>
-                    </h6>
-                  </div>
-                  <div class="col-12 col-md-4" id="back-to-top"><h6><a href="#">Back to top</a></h6></div>
-                </div>
-              </div>
-            </main>
-
-            <!--TODO add script to pre-load images  -->
-            <!-- <footer class="mastfoot">
-            <div class="inner">
-            <p>&copy;Malcolm Scruggs, 2017</a></p>
-          </div>
-        </footer> -->
-
+        <div class="col-12 col-md-7 order-md-1" id="icons-img-div">
+          <img class="box-img" src="../../../res/projects/circo/circo_promo_graphic_launcher.png"
+               alt="GitHub">
+        </div>
       </div>
 
-      <!-- Bootstrap core JavaScript
-      ================================================== -->
-      <!-- Placed at the end of the document so the pages load faster -->
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    </body>
-    </html>
+
+      <div class="row no-gutters background-red" id="color-row">
+        <div class="col-12 col-md-4 order-md-1 icon-text">
+          <h6 class="icons-head-left">Color choice for genric apps</h6>
+          <p>
+            <small><em>Choices: purple, blue, light blue, green, salmon, pink, red, orange,
+              yellow</em></small>
+          </p>
+        </div>
+        <div class="col-12 col-md-8 order-md-2" id="general-1-icons-img">
+          <img class="box-img"
+               src="../../../res/projects/circo/circo_promo_graphic_gallerycolors.png" alt="GitHub">
+        </div>
+      </div>
+
+      <div class="row no-gutters background-purple" id="social-row">
+        <div class="col-12 col-md-4 order-md-2 icon-text">
+          <h6 class="icons-head-left">Icons for Social Apps</h6>
+          <p>
+            <small><em>Twitch Messenger, Textra, Reddit, Tinder
+              <br>Facebook, Snapchat, Bitmoji, Messenger</em></small>
+          </p>
+        </div>
+        <div class="col-12 col-md-8 order-md-1" id="social-icons-img">
+          <img class="box-img" src="../../../res/projects/circo/circo_promo_graphic_social.png"
+               alt="GitHub">
+        </div>
+      </div>
+
+      <div class="row no-gutters background-green" id="google-row">
+        <div class="col-12 col-md-4 icon-text">
+          <h6 class="icons-head-left">Icons for Google Apps</h6>
+          <p>
+            <small><em>Wallpapers, Movies, Assistant, Classroom
+              <br>Youtube Music, Sheets, Translate, Fit</em></small>
+          </p>
+        </div>
+        <div class="col-12 col-md-8" id="google-icons-img">
+          <img class="box-img" src="../../../res/projects/circo/circo_promo_graphic_google.png"
+               alt="GitHub">
+        </div>
+      </div>
+
+      <div class="row no-gutters background-red" id="audio-row">
+        <div class="col-12 col-md-4 icon-text order-md-2">
+          <h6 class="icons-head-left">Icons for Audio Apps</h6>
+          <p>
+            <small><em>Apple Music, TuneIn, SoundHound, Pocket Casts
+              <br>Spotify, SoundCloud, Audiomack, Shazam</em></small>
+          </p>
+        </div>
+        <div class="col-12 col-md-8 order-md-1" id="general-2-icons-img">
+          <img class="box-img" src="../../../res/projects/circo/circo_promo_graphic_music.png"
+               alt="GitHub">
+        </div>
+      </div>
+      <!-- TODO add in use screenshots -->
+
+      <div class="row no-gutters background-dark-md" id="final-row">
+        <div class="col-12 col-md-4 final-row-col background">
+          <a href="https://play.google.com/store/apps/details?id=com.mookie.circo">
+            <img src="../../../res/projects/circo/ic_google_play.png" alt="Google Play" class="icon-img" id="play-icon">
+          </a>
+          <h6 class="under-icon-link">
+            <a href="https://play.google.com/store/apps/details?id=com.mookie.circo" id="play-text">
+              Available on the Play Store
+            </a>
+          </h6>
+        </div>
+
+        <div class="col-12 col-md-4 final-row-col background-dark-md">
+          <a href="https://github.com/MalcolmScruggs/CircoIconPack">
+            <img src="../../../res/projects/circo/ic_github.png" alt="GitHub" class="icon-img" id="github-icon">
+          </a>
+          <h6 class="under-icon-link">
+            <a href="https://github.com/MalcolmScruggs/CircoIconPack" id="github-text">
+              Circo on GitHub
+            </a>
+          </h6>
+        </div>
+        <div class="col-12 col-md-4" id="back-to-top"><h6><a href="#">Back to top</a></h6></div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+</body>
+</html>

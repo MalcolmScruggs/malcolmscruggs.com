@@ -106,11 +106,25 @@ Second row
   width: 7rem;
   height: 7rem;
   margin-bottom: 0.5rem;
+
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 /* TODO convert this to use javascript so image grows and text is underlined on hover either */
-.icon-img:hover {
+/*.icon-img:hover {*/
+  /*transform: scale(1.2);*/
+/*}*/
+
+.zoom {
   transform: scale(1.2);
+}
+
+.underline {
+  text-decoration: underline;
 }
 
 #back-to-top {

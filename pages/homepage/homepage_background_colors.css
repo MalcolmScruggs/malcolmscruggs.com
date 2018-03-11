@@ -6,8 +6,28 @@
   filter: grayscale(100%);
 }
 
-.saturate {
+.saturate-50 {
   filter: saturate(50%);
+}
+
+.saturate-55 {
+  filter: saturate(55%);
+}
+
+.saturate-60 {
+  filter: saturate(60%);
+}
+
+.saturate-65 {
+  filter: saturate(65%);
+}
+
+.saturate-70 {
+  filter: saturate(70%);
+}
+
+.saturate-75 {
+  filter: saturate(75%);
 }
 
 .purple {

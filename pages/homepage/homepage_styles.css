@@ -19,7 +19,6 @@ a:hover {
   border: .05rem solid #fff;
 }
 
-
 /*
 * Base structure
 */
@@ -34,6 +33,10 @@ body {
   text-align: center;
   text-shadow: 0 .08rem .1rem rgba(0,0,0,.5);
   overflow: hidden;
+}
+
+#title {
+  text-shadow: 0.05rem 0.1rem 0.3rem rgba(0,0,0,.5);
 }
 
 /* Background and Wrappers */
@@ -69,7 +72,7 @@ body {
 
 #background_background {
   z-index: 0;
-  background: url("../../res/backgrounds_forground.png") no-repeat;
+  background: url("../../res/blur_desat_background.png") no-repeat;
   background-size: 100%;
   width: 100%;
   height: 100%;

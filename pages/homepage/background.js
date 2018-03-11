@@ -1,11 +1,12 @@
 function applyClass(className) {
-    console.log(className);
-    $('#background_background').addClass(className);
-    $('#background_background').removeClass('grayscale');
+    let background = $('#background_background');
+    background.addClass(className);
+    background.removeClass('grayscale');
 }
 
 function reset() {
-    $('#background_background').attr('class', 'background');
-    $('#background_background').addClass('grayscale');
+    let background = $('#background_background');
+    background.attr('class', 'background');
+    background.addClass('grayscale');
 }
 

@@ -64,6 +64,11 @@
   line-height: 110%;
 }
 
+.icon-text p, h6 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 /*
 First Row
 */
@@ -115,6 +120,10 @@ Second row
 }
 
 .zoom {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
   transform: scale(1.2);
 }
 
@@ -125,12 +134,13 @@ Second row
 
 /* TODO update media query to not add excessive padding below certain sizes */
 @media (max-width: 768px) {
-  .icons-head-left {
-    padding: 9rem 9rem 0.2rem 9rem;
+  .icon-text {
+    padding: 3rem 9rem 3rem 9rem;
   }
 
-  .icon-text p {
-    padding-bottom: 8rem;
+  .icon-text p, h6 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   #first-descrip {

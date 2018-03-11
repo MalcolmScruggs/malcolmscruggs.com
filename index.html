@@ -5,9 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+          integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+          crossorigin="anonymous"></script>
 
   <!-- included for trying to get the background hover to work  -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -22,87 +30,60 @@
 </head>
 
 <body>
-
-
+<!-- TODO idea: have background chosen from random selection on load -->
 <div class="background grayscale" id="background_foreground"></div>
 <div class="background grayscale" id="background_background"></div>
 
 <div class="site-wrapper">
-  <div class="site-wrapper">
-    <div class="site-wrapper-inner">
+  <div class="site-wrapper-inner">
 
-      <div class="cover-container">
+    <div class="cover-container">
 
-        <header class="masthead clearfix">
-          <div class="inner">
-            <nav class="nav nav-masthead">
-              <a class="nav-link active" href="#">Home</a>
-              <a class="nav-link" href="#" onmouseover="applyClass('saturate-55')" onmouseout="reset()">About me</a>
-              <a class="nav-link" href="pages/projects/projects.html" onmouseover="applyClass('saturate-55')" onmouseout="reset()">Projects</a>
-              <a class="nav-link" href="#" onmouseover="applyClass('saturate-55')" onmouseout="reset()">Resume</a>
-              <a class="nav-link" href="#" onmouseover="applyClass('saturate-55')" onmouseout="reset()">Contact</a>
-            </nav>
-          </div>
-        </header>
+      <header class="masthead clearfix">
+        <div class="inner">
+          <nav class="nav nav-masthead">
+            <a class="nav-link active" href="#">Home</a>
+            <a class="nav-link" href="#" onmouseover="applyClass('saturate-55')"
+               onmouseout="reset()">About me</a>
+            <a class="nav-link" href="pages/projects/projects.html"
+               onmouseover="applyClass('saturate-55')" onmouseout="reset()">Projects</a>
+            <a class="nav-link" href="#" onmouseover="applyClass('saturate-55')"
+               onmouseout="reset()">Resume</a>
+            <a class="nav-link" href="#" onmouseover="applyClass('saturate-55')"
+               onmouseout="reset()">Contact</a>
+          </nav>
+        </div>
+      </header>
 
-        <main role="main" class="inner cover">
-          <h1 class="cover-heading text-nowrap display-4 font-weight-normal" id="title">Malcolm Scruggs</h1>
-          <p>Computer science & design student at Northeastern University</p>
-        </main>
+      <main role="main" class="inner cover">
+        <h1 class="cover-heading text-nowrap display-4 font-weight-normal" id="title">Malcolm
+          Scruggs</h1>
+        <p>Computer science & design student at Northeastern University</p>
+      </main>
 
-        <footer class="mastfoot">
-          <div class="inner">
-            <p>&copy;Malcolm Scruggs, 2017</p>
-          </div>
-        </footer>
-
-      </div>
+      <footer class="mastfoot">
+        <div class="inner">
+          <p>&copy;Malcolm Scruggs, 2017</p>
+        </div>
+      </footer>
 
     </div>
 
-
-    <!-- Script to pre-load all images for hovering over nav-items -->
-    <!--<div class="hidden">-->
-      <!--<script type="text/javascript">-->
-      <!--function preloader() {-->
-        <!--if (document.images) {-->
-          <!--var img1 = new Image();-->
-          <!--var img2 = new Image();-->
-          <!--var img3 = new Image();-->
-          <!--var img4 = new Image();-->
-          <!--var img5 = new Image();-->
-
-          <!--img1.src = "images/mountain_purple.jpg";-->
-          <!--img2.src = "images/mountain_red.jpg";-->
-          <!--img3.src = "images/mountain_teal.jpg";-->
-          <!--img4.src = "images/mountain_green.jpg";-->
-          <!--img5.src = "images/mountain.jpg";-->
-        <!--}-->
-      <!--}-->
-      <!--function addLoadEvent(func) {-->
-        <!--var oldonload = window.onload;-->
-        <!--if (typeof window.onload != 'function') {-->
-          <!--window.onload = func;-->
-        <!--} else {-->
-          <!--window.onload = function() {-->
-            <!--if (oldonload) {-->
-              <!--oldonload();-->
-            <!--}-->
-            <!--func();-->
-          <!--}-->
-        <!--}-->
-      <!--}-->
-      <!--addLoadEvent(preloader);-->
-      <!--</script>-->
-    <!--</div>-->
   </div>
-  </div>
+</div>
 
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
 </body>
 </html>
